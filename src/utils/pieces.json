@@ -1,0 +1,23 @@
+{
+    "pawn": {
+        "white": {
+            "initial": [["a","2"], ["b","2"], ["c","2"], ["d","2"], ["e","2"], ["f","2"], ["g","2"], ["h","2"]]
+        },
+        "black": {
+            "initial": [["a","7"], ["b","7"], ["c","7"], ["d","7"], ["e","7"], ["f","7"], ["g","7"], ["h","7"]]
+        },
+        "actions": {
+            "move": [{
+                "direction": "forward",
+                "places": 1
+            }],
+            "attack": [{
+                "direction": "forward-left",
+                "places": 1
+            }, {
+                "direction": "forward-right",
+                "places": 1
+            }]
+        }
+    }
+}
