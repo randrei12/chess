@@ -6,6 +6,4 @@
 	<title>Chess</title>
 </svelte:head>
 
-<section>
-	
-</section>
+<Board />
