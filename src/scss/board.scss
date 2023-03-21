@@ -1,8 +1,0 @@
-.board {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-
-    .cell {
-        background: red;
-    }
-}
