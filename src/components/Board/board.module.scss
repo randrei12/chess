@@ -1,0 +1,41 @@
+.board {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+
+    .cell {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        aspect-ratio: 1;
+
+        &.white {
+            background: wheat;
+            color: black;
+        }
+
+        &.black {
+            background: black;
+            color: white;
+        }
+
+        &.labelBottom::before {
+            content: attr(data-x);
+            position: absolute;
+            bottom: 1px;
+            right: 1px;
+        }
+
+        &.labelLeft::after {
+            color: inherit;
+            content: attr(data-y);
+            position: absolute;
+            top: 1px;
+            left: 1px; 
+        }
+    }
+}
